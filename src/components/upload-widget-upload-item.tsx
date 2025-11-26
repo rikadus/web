@@ -1,9 +1,10 @@
 import * as Progress from "@radix-ui/react-progress";
 
-import { Download, ImageUp, Link2, RefreshCcw, X } from "lucide-react";
+import { Download, ImageUp, Link2, RefreshCcw, Upload, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
-import { Upload, useUploads } from "../store/uploads";
+/* Corrigindo a duplicação do import Upload ussando type*/
+import { type Upload, useUploads } from "../store/uploads";
 import { formatBytes } from "../utils/format-bytes";
 import { downloadUrl } from "../utils/download-url";
 
